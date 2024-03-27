@@ -1,0 +1,147 @@
+<!-- Document Type Declaration -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for document information -->
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Sets viewport for responsive design -->
+    <meta name="description" content="this week we are looking at semantic elements"> <!-- Description of the page -->
+    <meta name="robots" content="noindex, nofollow"> <!-- Instructs search engines not to index the page -->
+    <title>HUNGRY PIZZA</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="CSS/style.css"> <!-- Link to an external CSS file -->
+    <script src="JS/script.js" defer></script>
+</head>
+
+<body>
+    <!-- Heading for the restaurant's name -->
+    <h1>HUNGRY PIZZA</h1>
+
+    <!-- Image of pizza size -->
+    <div>
+        <img src="images/Pizza size.webp" alt="pizza size">
+    </div>
+
+    <!-- Form for ordering pizza -->
+    <form method="post" action="Order Pizza.html" enctype="multipart/form-data">
+
+        <!-- Personal Details Section -->
+        <fieldset>
+            <legend>Personal information</legend>
+            <label>First Name:</label><input type="text" name="fname" required>
+            <label>Last Name:</label><input type="text" name="lname" required>
+            <label>Mobile number:</label><input type="text" name="mobile" required>
+            <label>Email Address:</label><input type="email" name="email" required>
+        </fieldset>
+
+        <!-- Order Details Section -->
+        <fieldset>
+            <legend>Order Details</legend>
+            <select name="size">
+                <option>Select Pizza Size</option>
+                <option value="1">Small</option>
+                <option value="2">Medium</option>
+                <option value="3">Large</option>
+                <option value="4">Family</option>   
+            </select>
+            <select name="Quantity">
+                <option>Select Pizza</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <select name="payment">
+                <option>Payment Method</option>
+                <option value="1">Cash</option>
+                <option value="2">Debit Card</option>
+                <option value="3">Credit Card</option>
+                <option value="4">Inter-ac</option>   
+            </select>
+        </fieldset>
+
+        <!-- Cheeses Section -->
+        <fieldset>
+            <legend>Cheeses</legend>
+            <input type="radio" name="cheese" value="1" />Mozzarella
+            <input type="radio" name="cheese" value="2" />Cheddar
+            <input type="radio" name="cheese" value="3" />Feta
+            <input type="radio" name="cheese" value="4" />Provolone
+            <input type="radio" name="cheese" value="5" />Parmesan
+        </fieldset>
+        
+        <!-- Sauces Section -->
+        <fieldset>
+            <legend>Sauces</legend>
+            <input type="radio" name="sauce" value="1" />Pizza Sauce
+            <input type="radio" name="sauce" value="2" />Reduced Fat
+            <input type="radio" name="sauce" value="3" />BBQ Sauce
+            <input type="radio" name="sauce" value="4" />Pesto
+            <input type="radio" name="sauce" value="5" />Garlic Sauce
+            <input type="radio" name="sauce" value="6" />Garlic Ranch Sauce
+            <input type="radio" name="sauce" value="7" />Buffalo Sauce
+            <input type="radio" name="sauce" value="8" />Hummus
+        </fieldset>
+
+        <!-- Drinks Section -->
+        <fieldset>
+            <legend>Drinks</legend>
+            <input type="radio" name="drink" value="1" />Coke
+            <input type="radio" name="drink" value="2" />Pepsi
+            <input type="radio" name="drink" value="3" />Cold Coffee
+            <input type="radio" name="drink" value="4" />Diet Coke
+            <input type="radio" name="drink" value="5" />Hot Coffee
+            <input type="radio" name="drink" value="6" />Tea
+            <input type="radio" name="drink" value="7" />Mango Juice
+            <input type="radio" name="drink" value="8" />Guava Juice
+        </fieldset>
+
+        <!-- Toppings Section -->
+        <fieldset>
+            <legend>Toppings</legend>
+            <input type="checkbox" name="toppings" value="1"/>Corn
+            <input type="checkbox" name="toppings" value="2"/>Mushroom
+            <input type="checkbox" name="toppings" value="3"/>Onion
+            <input type="checkbox" name="toppings" value="4"/>Tomatoes
+            <input type="checkbox" name="toppings" value="5"/>Green Bell Pepper
+            <input type="checkbox" name="toppings" value="6"/>Green Olives
+            <input type="checkbox" name="toppings" value="7"/>Habaneros
+            <input type="checkbox" name="toppings" value="8"/>Pepperoni
+        </fieldset>
+
+        <!-- Special Instruction Section -->
+        <fieldset>
+            <legend>Special Instructions</legend>
+            <textarea name="instructions" rows="3" cols="42"></textarea>
+        </fieldset>
+
+        <!-- Buttons -->
+        <input type="submit" value="PLACE YOUR ORDER"/>
+        <input type="reset" value="START OVER" />
+
+    </form>
+
+    <!-- Footer section of the webpage -->
+    <footer id="footer">
+        <div class="division1">
+            <h2>About us</h2>
+            <p>We are ready to serve you.</p>
+            <p>Hope you will love our service.</p>
+        </div>
+        <div class="division2">
+            <h2>Contact us</h2>
+            <p>Bayfield Road, Barrie, Canada</p>
+            <p>Phone: +1 876 543 1234</p>
+            <p>Email: hungrypizza@gmail.com</p>
+        </div>
+        <div class="division3">
+            <h2>Follow us</h2>
+            <div>
+                <img src="./images/instagram.jpg" alt="instagram">
+                <img src="./images/youtube.jpg" alt="youtube">
+                <img src="./images/linkedin.png" alt="Linkedin">
+                <img src="./images/twitter.jpg" alt="Twitter">
+            </div>
+        </div>
+    </footer>
+</body>

@@ -1,0 +1,194 @@
+/* Reset default margins, paddings, and box-sizing for all elements */
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the whole body of the page */
+body {
+    margin: 0 100px; /* Left and right margin of 100px */
+    background-color: #ffeae0; /* Background color for the body */
+    align-items: center; /* Center the elements vertically */
+    justify-content: center; /* Center the elements horizontally */
+}
+
+/* Styling for the main heading (H1) */
+body > h1 {
+    text-align: center; /* Center align the text */
+}
+
+/* Styling for div elements within the body */
+body > div {
+    text-align: center; /* Center align the content within the div */
+}
+
+/* Styling for the navigation bar */
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0; /* Top and bottom padding of 30px, no left and right padding */
+}
+
+/* Styling for the logo */
+.nav > .logo > h1 {
+    font-weight: 1000;
+    font-family: sans-serif;
+    color: #000000; /* Black color for the text */
+}
+
+/* Styling for the 'b' element within the logo */
+.nav > .logo > b {
+    color: #ff511c; /* Orange color for the text */
+}
+
+/* Styling for the navigation links */
+.nav > ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav > ul > li {
+    margin-right: 30px; /* Right margin of 30px for the list items */
+}
+
+/* Styling for the navigation links (shared styles) */
+.nav > ul > li {
+    text-decoration: none;
+    color: #000000; /* Black color for the text */
+    font-weight: 500; /* Medium font weight */
+    font-family: sans-serif;
+    font-size: 17px; /* Font size of 17px */
+}
+
+/* Styling for the active navigation link (shared styles) */
+.nav > ul > .active::after {
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: #ff511c; /* Orange color for the underline */
+    display: flex;
+    position: relative;
+    margin-left: 10px; /* Left margin of 10px for the underline */
+}
+
+/* Styling for input elements (shared styles) */
+input {
+    padding: 10px 20px; /* Padding of 10px top and bottom, 20px left and right */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    font-weight: 600; /* Bold font weight */
+}
+
+/* Styling for the 'signin' class input */
+.signin {
+    background: transparent;
+    border: none; /* No background and border */
+}
+
+/* Styling for the 'signup' class input */
+.signup {
+    background-color: #ff511c; /* Orange background color */
+    color: #ffffff; /* White text color */
+    outline: none; /* Remove outline on focus */
+}
+
+/* Styling for the content section */
+.content {
+    display: grid;
+    grid-template-columns: 50% auto; /* Grid layout with two columns */
+    gap: 30px; /* Gap between grid items of 30px */
+    margin-top: 50px; /* Top margin of 50px */
+    align-items: center; /* Center align the content vertically */
+    justify-content: space-around; /* Space-around content horizontally */
+    width: 100%;
+}
+
+/* Styling for the left content section */
+.content > .content-left {
+    display: block;
+    width: 100%;
+}
+
+/* Styling for the info section within the left content */
+.content > .content-left > .info {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the H2 heading within the info section */
+.content > .content-left > .info > h2 {
+    font-size: 60px; /* Font size of 60px */
+    font-family: sans-serif;
+    margin-bottom: 30px; /* Bottom margin of 30px */
+}
+
+/* Styling for the paragraphs within the info section */
+.content > .content-left > .info > p {
+    font-size: 20px; /* Font size of 20px */
+    line-height: 2pc; /* Line height of 2pc */
+    margin-bottom: 30px; /* Bottom margin of 30px */
+    font-family: sans-serif;
+}
+
+/* Styling for the button within the left content */
+.content > .content-left > a {
+    padding: 10px 23px;
+    background-color: #ff511c; /* Orange background color */
+    color: #ffffff; /* White text color */
+    border-radius: 5px; /* Border radius of 5px */
+    text-decoration: none; /* Remove underline from the link */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+}
+
+/* Styling for the image within the right content */
+.content > .content-right > img {
+    width: 700px; /* Image width of 700px */
+    height: auto; /* Maintain aspect ratio */
+    position: relative; /* Positioning context */
+}
+
+/* Styling for the footer section */
+#footer {
+    background-color: #000; /* Black background color */
+    display: flex;
+    margin: 5% 0%; /* Margin of 5% top and bottom, 0% left and right */
+}
+
+/* Styling for the div elements within the footer */
+#footer > div {
+    padding: 10% 10%; /* Padding of 10% top and bottom, 10% left and right */
+    text-align: center; /* Center align the content within the div */
+}
+
+/* Styling for paragraphs within the footer div */
+#footer > div > p {
+    color: white; /* White text color */
+}
+
+/* Styling for headings within the footer div */
+#footer > div > h2 {
+    color: white; /* White text color */
+}
+
+/* Styling for the last child div within the footer */
+#footer > div:last-child {
+    display: flex;
+    flex-direction: column; /* Arrange elements in a column */
+}
+
+/* Styling for the div elements within the last child div of the footer */
+#footer > div:last-child > div {
+    display: flex;
+    justify-content: space-between; /* Space-around content horizontally */
+}
+
+/* Styling for images within the div elements of the last child div of the footer */
+#footer > div:last-child > div > img {
+    height: 2em; /* Height of 2em */
+    margin: 0 4px; /* Margin of 0px top and bottom, 4px left and right */
+    width: auto; /* Auto width to maintain aspect ratio */
+}
